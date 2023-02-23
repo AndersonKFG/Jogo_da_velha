@@ -7,10 +7,17 @@ const botao6 = document.getElementById("6")
 const botao7 = document.getElementById("7")
 const botao8 = document.getElementById("8")
 const botao9 = document.getElementById("9")
+const turno_dit = document.getElementById("turno_dit")
 
 function trocar_turno(){
 
     console.log("Master >>" + turno)
+
+    if (turno = "x"){
+        turno_dit.textContent = "Vez do jogador com X";
+    }else if(turno = "c"){
+        turno_dit.textContent = "Vez do jogador com ◯";
+    }
 
     botao1.addEventListener('click',function(){
 
@@ -32,9 +39,12 @@ function trocar_turno(){
 
     
     botao2.addEventListener('click',function(){
+
+        console.log("AQUI!" + turno)
         
         if(turno = "x"){
 
+            console.log("AAAAAAAAAAAAAAAA")
             this.textContent = "X";
             botao2.setAttribute("disabled", "")
             trocar_turno(turno="c");
@@ -42,6 +52,7 @@ function trocar_turno(){
         }
         else if(turno = "c"){
 
+            console.log("Aquiiiiiii!")
             this.textContent = "◯"
             botao2.setAttribute("disabled", "")
             trocar_turno(turno="x");
