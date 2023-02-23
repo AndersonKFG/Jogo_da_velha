@@ -8,57 +8,119 @@ const botao7 = document.getElementById("7")
 const botao8 = document.getElementById("8")
 const botao9 = document.getElementById("9")
 const turno_dit = document.getElementById("turno_dit")
+// botao2.setAttribute("disabled", "")
 
-function trocar_turno(){
+var turno = "c"
+console.log("Master TURNO -> " + turno)
 
-    console.log("Master >>" + turno)
+function _turno(){
 
-    if (turno = "x"){
-        turno_dit.textContent = "Vez do jogador com X";
-    }else if(turno = "c"){
-        turno_dit.textContent = "Vez do jogador com ◯";
+    if (turno == "c"){
+        turno = "x";
+        return turno;
+
+    }else if(turno == "x"){
+        turno = "c";
+        return turno
     }
 
-    botao1.addEventListener('click',function(){
+};
 
-        if(turno = "x"){
+botao1.addEventListener('click', function(){
+    let turno_ = _turno();
 
-            this.textContent = "X";
-            botao1.setAttribute("disabled", "");
-            trocar_turno(turno="c");
-
-        }
-        else if(turno = "c"){
-
-            this.textContent = "◯";
-            botao1.setAttribute("disabled", "");
-            trocar_turno(turno="x");
-
-        }
-    })
-
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
     
-    botao2.addEventListener('click',function(){
+})
 
-        console.log("AQUI!" + turno)
-        
-        if(turno = "x"){
+botao2.addEventListener('click', function(){
+    let turno_ = _turno();
 
-            console.log("AAAAAAAAAAAAAAAA")
-            this.textContent = "X";
-            botao2.setAttribute("disabled", "")
-            trocar_turno(turno="c");
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
 
-        }
-        else if(turno = "c"){
+botao3.addEventListener('click', function(){
+    let turno_ = _turno();
 
-            console.log("Aquiiiiiii!")
-            this.textContent = "◯"
-            botao2.setAttribute("disabled", "")
-            trocar_turno(turno="x");
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
 
-        }
-    })
-}
+botao4.addEventListener('click', function(){
+    let turno_ = _turno();
 
-trocar_turno(turno="x");
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
+
+botao5.addEventListener('click', function(){
+    let turno_ = _turno();
+
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
+
+botao6.addEventListener('click', function(){
+    let turno_ = _turno();
+
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
+
+botao7.addEventListener('click', function(){
+    let turno_ = _turno();
+
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
+
+botao8.addEventListener('click', function(){
+    let turno_ = _turno();
+
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
+
+botao9.addEventListener('click', function(){
+    let turno_ = _turno();
+
+    if (turno_ == "x"){
+        console.log("X")
+    }else if(turno_ == "c"){
+        console.log("C")
+    }
+    
+})
