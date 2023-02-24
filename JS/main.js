@@ -23,6 +23,7 @@ var turno = "c"
 function definir_ganhador(){
     if (ganhador == 1){
         turno_dit.textContent = "O vencedor é X"
+        turno_dit.style.background = 'linear-gradient(to left, orange, red';
         botao1.setAttribute("disabled", "")
         botao2.setAttribute("disabled", "")
         botao3.setAttribute("disabled", "")
@@ -34,6 +35,7 @@ function definir_ganhador(){
         botao9.setAttribute("disabled", "")
     }else if(ganhador == 2){
         turno_dit.textContent = "O vencedor é ◯"
+        turno_dit.style.background = 'linear-gradient(to left, orange, red)';
         botao1.setAttribute("disabled", "")
         botao2.setAttribute("disabled", "")
         botao3.setAttribute("disabled", "")

@@ -27,6 +27,8 @@ button:hover{
     cursor: pointer;
 }
 
-.turnos{
+#turno_dit{
     text-align: center;
+    background: transparent;
+    border-radius: 20px;
 }
